@@ -50,7 +50,7 @@ El análisis porcentual muestra que el Q4 representa cerca del 40% de las
 ventas anuales en varios años, mientras que el Q1 mantiene una participación
 menor pero creciente.
 
-![Participación trimestral](images/trimestrePorcentual.svg)
+![Participación trimestral](Images/trimestrePorcentual.svg)
 
 ---
 
@@ -59,7 +59,7 @@ Se analizó la variación porcentual de ventas entre trimestres consecutivos,
 detectando una alta volatilidad, especialmente en las transiciones hacia el
 Q4.
 
-![Crecimiento y volatilidad](images/volatilidadInteranual.svg)
+![Crecimiento y volatilidad](Images/volatilidadInteranual.svg)
 
 ---
 
