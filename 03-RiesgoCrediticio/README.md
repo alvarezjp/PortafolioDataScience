@@ -10,11 +10,11 @@ El objetivo es identificar los principales factores asociados al default y const
 
 ## 🌐 Visualización Interactiva
 
-El proyecto cuenta con una versión interactiva que permite explorar los gráficos de segmentación de riesgo de manera dinámica.
+El proyecto cuenta con la libreria plotly que permite explorar los gráficos de segmentación de riesgo de manera dinámica.
 
-👉 Puede visualizarse en:
+👉 Para visualizarlos se debe descargar el notebook:
 
-**🔗 https://URL_AQUI**
+**🔗 https://github.com/alvarezjp/PortafolioDataScience/blob/main/03-RiesgoCrediticio/Notebook/03-Credit.ipynb**
 
 > La versión interactiva incluye análisis por tasa de interés, porcentaje de ingreso, historial crediticio y tipo de vivienda.
 
@@ -135,3 +135,24 @@ El modelo logra identificar correctamente la mayoría de los clientes de alto ri
 ---
 
 ## 📁 Estructura del Proyecto
+
+    PortafolioDataScience/
+    │
+    ├── Notebook/
+    │   └── credit_risk_analysis.ipynb
+    │
+    ├── Data/
+    │   └── credit_risk_dataset.csv
+    │
+    ├── Images/
+    │   └── (gráficos utilizados en este README)
+    │
+    └── README.md
+
+---
+
+## 📌 Notebook Completo
+
+El análisis detallado y el modelado completo se encuentran en:
+
+➡️ `./Notebook/credit_risk_analysis.ipynb`
