@@ -4,4 +4,5 @@ numpy
 matplotlib
 plotly
 scikit-learn==1.7.2
+xgboost
 joblib
