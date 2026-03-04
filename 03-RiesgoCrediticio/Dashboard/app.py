@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 import joblib
@@ -12,26 +13,29 @@ st.set_page_config(
     layout="wide" 
 )
 
-@st.cache_resource 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "Data")
+
+@st.cache_resource
 def load_model():
-    return joblib.load("./Data/modelo_credito.pkl")
-model = load_model()
+    return joblib.load(os.path.join(DATA_DIR, "modelo_credito.pkl"))
 
 @st.cache_data
 def load_df():
-    return pd.read_csv('./Data/newDf.csv')
-df = load_df()
+    return pd.read_csv(os.path.join(DATA_DIR, "newDf.csv"))
 
 @st.cache_data
 def load_test_results():
-    return pd.read_csv("./Data/test_results.csv")
-test_data = load_test_results()
+    return pd.read_csv(os.path.join(DATA_DIR, "test_results.csv"))
 
 @st.cache_data
 def load_roc():
-    return pd.read_csv("./Data/roc_data.csv")
-roc_data = load_roc()
+    return pd.read_csv(os.path.join(DATA_DIR, "roc_data.csv"))
 
+model = load_model()
+df = load_df()
+test_data = load_test_results()
+roc_data = load_roc()
 tab1, tab2, tab3, tab4 = st.tabs(["Cartera", "Variables", "Analisis del Modelo","Simulacion Individual"])
 
 with tab1:
